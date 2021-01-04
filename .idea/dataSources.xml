@@ -108,5 +108,13 @@
       <jdbc-url>jdbc:oracle:thin:@10.243.207.50:1521:prdorcl</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="rdmp" group="ah_test" uuid="7861fb7c-ec0b-4096-ab68-38a27a41330d">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@59.110.160.28:1521/orcl</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
