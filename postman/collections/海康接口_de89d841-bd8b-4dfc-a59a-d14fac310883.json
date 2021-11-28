@@ -1,0 +1,286 @@
+{
+    "info": {
+        "_postman_id": "dd890d37-a23d-4f3e-b742-de00d1c4a623",
+        "name": "海康接口",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "获取海康token",
+            "id": "21a737e6-3ae1-49b5-a03a-31df5ede5c18",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"userName\": \"jxjd\",\n    \"password\": \"1058249c7206ba373765a1ae40bb4c77\",\n    \"phoneNo\": \"18888866664\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://218.90.184.184:8443/api/sys/token/get",
+                    "protocol": "https",
+                    "host": [
+                        "218",
+                        "90",
+                        "184",
+                        "184"
+                    ],
+                    "port": "8443",
+                    "path": [
+                        "api",
+                        "sys",
+                        "token",
+                        "get"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "2c05e99d-0186-4b1c-9983-44efde6ce20a",
+                    "name": "获取海康token",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"userName\": \"jxjd\",\n    \"password\": \"1058249c7206ba373765a1ae40bb4c77\",\n    \"phoneNo\": \"18888866664\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://218.90.184.184:8443/api/sys/token/get",
+                            "protocol": "https",
+                            "host": [
+                                "218",
+                                "90",
+                                "184",
+                                "184"
+                            ],
+                            "port": "8443",
+                            "path": [
+                                "api",
+                                "sys",
+                                "token",
+                                "get"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Server",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Tue, 02 Nov 2021 08:32:56 GMT"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json;charset=UTF-8"
+                        },
+                        {
+                            "key": "Transfer-Encoding",
+                            "value": "chunked"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        },
+                        {
+                            "key": "Vary",
+                            "value": "Accept-Encoding"
+                        },
+                        {
+                            "key": "Set-Cookie",
+                            "value": "Secure"
+                        },
+                        {
+                            "key": "Content-Encoding",
+                            "value": "gzip"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"msg\": \"操作成功\",\n    \"code\": 200,\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ4bG15dW4iLCJ1biI6Imp4amQiLCJleHAiOjE2MzU4NDE5NzYsImlhdCI6MTYzNTg0MTk3NiwicG4iOiIxODg4ODg2NjY2NCJ9.r8W_mc6FfC3ZSdEG6x7Qg2DPoSH-9l684WwAzX6SjOg\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "getCameraList",
+            "id": "8bdc76c2-e468-4f0e-8e11-c3956d952bef",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"token\": \"{{haikang_token}}\",\n    \"pageNumber\": \"0\",\n    \"pageSize\": \"1000\",\n    \"deviceType\": \"CAMERA\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://218.90.184.184:8443/api/cmr/c/get",
+                    "protocol": "https",
+                    "host": [
+                        "218",
+                        "90",
+                        "184",
+                        "184"
+                    ],
+                    "port": "8443",
+                    "path": [
+                        "api",
+                        "cmr",
+                        "c",
+                        "get"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "ca515412-2205-49a4-95b1-8c579d44a957",
+                    "name": "getCameraList",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"token\": \"{{haikang_token}}\",\n    \"pageNumber\": \"0\",\n    \"pageSize\": \"1000\",\n    \"deviceType\": \"CAMERA\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://218.90.184.184:8443/api/cmr/c/get",
+                            "protocol": "https",
+                            "host": [
+                                "218",
+                                "90",
+                                "184",
+                                "184"
+                            ],
+                            "port": "8443",
+                            "path": [
+                                "api",
+                                "cmr",
+                                "c",
+                                "get"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Server",
+                            "value": "nginx"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Tue, 02 Nov 2021 08:36:52 GMT"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json;charset=UTF-8"
+                        },
+                        {
+                            "key": "Transfer-Encoding",
+                            "value": "chunked"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        },
+                        {
+                            "key": "Vary",
+                            "value": "Accept-Encoding"
+                        },
+                        {
+                            "key": "Set-Cookie",
+                            "value": "Secure"
+                        },
+                        {
+                            "key": "Content-Encoding",
+                            "value": "gzip"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"msg\": \"操作成功\",\n    \"code\": 200,\n    \"data\": [\n        {\n            \"id\": 3396,\n            \"cameraName\": \"C6HN(D85587835)\",\n            \"deviceSerial\": \"D85587835\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166002768,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3336,\n            \"cameraName\": \"C6HN(D73768161)\",\n            \"deviceSerial\": \"D73768161\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166021665,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3328,\n            \"cameraName\": \"C6HN(D85549699)\",\n            \"deviceSerial\": \"D85549699\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166040482,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3322,\n            \"cameraName\": \"C6HN(D85551680)\",\n            \"deviceSerial\": \"D85551680\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166051283,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3312,\n            \"cameraName\": \"C6HN(D85551135)\",\n            \"deviceSerial\": \"D85551135\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166085935,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3308,\n            \"cameraName\": \"香榭丽舍长江北路店\",\n            \"deviceSerial\": \"D85588113\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166102362,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3243,\n            \"cameraName\": \"星光名座交叉点奶茶\",\n            \"deviceSerial\": \"D85588117\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166111516,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3219,\n            \"cameraName\": \"C6HN(D85588581)\",\n            \"deviceSerial\": \"D85588581\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166133997,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3200,\n            \"cameraName\": \"C6HN(D85551537)\",\n            \"deviceSerial\": \"D85551537\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166140939,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3190,\n            \"cameraName\": \"老无锡菜饭\",\n            \"deviceSerial\": \"D85550190\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166149263,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3183,\n            \"cameraName\": \"C6HN(D85550085)\",\n            \"deviceSerial\": \"D85550085\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166156684,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3182,\n            \"cameraName\": \"C6HN(D85550184)\",\n            \"deviceSerial\": \"D85550184\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166166041,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3178,\n            \"cameraName\": \"星光名座满石炸鸡2\",\n            \"deviceSerial\": \"D85547746\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166175255,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3177,\n            \"cameraName\": \"星光名座满石炸鸡1\",\n            \"deviceSerial\": \"D85550133\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166187932,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3119,\n            \"cameraName\": \"C6HN(D85550179)\",\n            \"deviceSerial\": \"D85550179\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166196730,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3078,\n            \"cameraName\": \"C6HN(D85587238)\",\n            \"deviceSerial\": \"D85587238\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166211287,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 1,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3063,\n            \"cameraName\": \"新吴区南站街道风雷新村杨沟水巷22-9号\",\n            \"deviceSerial\": \"D73765478\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166219474,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3047,\n            \"cameraName\": \"C6HN(D85551176)\",\n            \"deviceSerial\": \"D85551176\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166226778,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 3045,\n            \"cameraName\": \"百家乐炸串\",\n            \"deviceSerial\": \"D85559415\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166234489,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 1,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2996,\n            \"cameraName\": \"C6HN(D85550301)\",\n            \"deviceSerial\": \"D85550301\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166247396,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2898,\n            \"cameraName\": \"C6HN(D85550011)\",\n            \"deviceSerial\": \"D85550011\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166253983,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2894,\n            \"cameraName\": \"间客小食\",\n            \"deviceSerial\": \"D85550772\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166260542,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2871,\n            \"cameraName\": \"宾之果咖啡店\",\n            \"deviceSerial\": \"D85551168\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166268538,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2870,\n            \"cameraName\": \"勇峰石餐饮店\",\n            \"deviceSerial\": \"D85550316\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166275003,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2852,\n            \"cameraName\": \"C6HN(D85588324)\",\n            \"deviceSerial\": \"D85588324\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166283795,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2851,\n            \"cameraName\": \"C6HN(D85559448)\",\n            \"deviceSerial\": \"D85559448\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166290982,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2832,\n            \"cameraName\": \"壹间餐厅\",\n            \"deviceSerial\": \"D85559444\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166307707,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2824,\n            \"cameraName\": \"蜀湘情酸菜鱼馆\",\n            \"deviceSerial\": \"D85558888\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166315581,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2823,\n            \"cameraName\": \"C6HN(D85558684)\",\n            \"deviceSerial\": \"D85558684\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166328806,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2817,\n            \"cameraName\": \"C6HN(D85588521)\",\n            \"deviceSerial\": \"D85588521\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166373982,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2772,\n            \"cameraName\": \"C6HN(D85559459)\",\n            \"deviceSerial\": \"D85559459\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166390101,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 1,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2752,\n            \"cameraName\": \"乾柯面馆（星光名座店）\",\n            \"deviceSerial\": \"D73737785\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166397899,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2698,\n            \"cameraName\": \"新吴区雅香一只猪韩日烤肉自助餐店\",\n            \"deviceSerial\": \"D73737718\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166404331,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2694,\n            \"cameraName\": \"C6HN(D85550422)\",\n            \"deviceSerial\": \"D85550422\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166411202,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2689,\n            \"cameraName\": \"粤仔湾\",\n            \"deviceSerial\": \"D73737754\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166417743,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2686,\n            \"cameraName\": \"C6HN(D73737468)\",\n            \"deviceSerial\": \"D73737468\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166424744,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2682,\n            \"cameraName\": \"食谷餐饮店\",\n            \"deviceSerial\": \"D73737623\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166431337,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2661,\n            \"cameraName\": \"好面道面馆(D73737930)\",\n            \"deviceSerial\": \"D73737930\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166438891,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2525,\n            \"cameraName\": \"福迎门家常菜馆(234279315)\",\n            \"deviceSerial\": \"234279315\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166449344,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2516,\n            \"cameraName\": \"新吴区易仕军羊肉店\",\n            \"deviceSerial\": \"D73737480\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166456789,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2513,\n            \"cameraName\": \"新吴尹元飞馄饨店\",\n            \"deviceSerial\": \"D73737665\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166463941,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2510,\n            \"cameraName\": \"麻辣小宇宙\",\n            \"deviceSerial\": \"234276501\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166470541,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2508,\n            \"cameraName\": \"玉嫂羊肉店\",\n            \"deviceSerial\": \"D73754204\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166487200,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2501,\n            \"cameraName\": \"新吴区顺萍小吃店\",\n            \"deviceSerial\": \"D73755898\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166493725,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2494,\n            \"cameraName\": \"还好小吃店\",\n            \"deviceSerial\": \"D73754186\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166511357,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2488,\n            \"cameraName\": \"新吴区金蚝花甲小吃店\",\n            \"deviceSerial\": \"D73754239\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166525789,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2474,\n            \"cameraName\": \"饭遇见鱼餐饮有限公司(234979851)\",\n            \"deviceSerial\": \"234979851\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166538261,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2471,\n            \"cameraName\": \"葛娟麻辣烫店(D73737743)\",\n            \"deviceSerial\": \"D73737743\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166544631,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2458,\n            \"cameraName\": \"家馨小吃(D73753138)\",\n            \"deviceSerial\": \"D73753138\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166550989,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2454,\n            \"cameraName\": \"号辉火锅(234276815)\",\n            \"deviceSerial\": \"234276815\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166557904,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 1,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2452,\n            \"cameraName\": \"鑫明大桥小吃店(D73752935)\",\n            \"deviceSerial\": \"D73752935\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166567170,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2439,\n            \"cameraName\": \"街坊小厨\",\n            \"deviceSerial\": \"D73737479\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166575982,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2437,\n            \"cameraName\": \"吉小妞黄焖鸡米饭(D73737753)\",\n            \"deviceSerial\": \"D73737753\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166584782,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2428,\n            \"cameraName\": \"久伴餐饮(D73753431)\",\n            \"deviceSerial\": \"D73753431\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166609939,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2384,\n            \"cameraName\": \"巴湘快餐店(D73753359)\",\n            \"deviceSerial\": \"D73753359\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166617412,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2377,\n            \"cameraName\": \"食为乐川菜店(D73753270)\",\n            \"deviceSerial\": \"D73753270\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166625058,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2376,\n            \"cameraName\": \"陈文华包子店(234279100)\",\n            \"deviceSerial\": \"234279100\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166639381,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2365,\n            \"cameraName\": \"新吴区康琪小吃店\",\n            \"deviceSerial\": \"D73753447\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166685308,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2312,\n            \"cameraName\": \"新吴区保全小吃店\",\n            \"deviceSerial\": \"D73755911\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166692639,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2311,\n            \"cameraName\": \"新区陈贝尔小吃店\",\n            \"deviceSerial\": \"234276744\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166700056,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2309,\n            \"cameraName\": \"新吴区老牌杂粮煎饼餐饮店\",\n            \"deviceSerial\": \"234276661\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166707494,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2305,\n            \"cameraName\": \"新吴区八零七餐饮店\",\n            \"deviceSerial\": \"D73755936\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166723263,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2304,\n            \"cameraName\": \"新吴区飘香北方饺子店\",\n            \"deviceSerial\": \"D73754289\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166730241,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2303,\n            \"cameraName\": \"新吴区洪川饭店\",\n            \"deviceSerial\": \"D73753857\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166738737,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2302,\n            \"cameraName\": \"新吴区穆记牛肉汤小吃店\",\n            \"deviceSerial\": \"D73753930\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166744939,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2299,\n            \"cameraName\": \"新吴区许秀淮南牛肉汤\",\n            \"deviceSerial\": \"D73754269\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 1,\n            \"startTime\": 1600166751923,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2298,\n            \"cameraName\": \"新吴区齐发友小吃店\",\n            \"deviceSerial\": \"D73754195\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166759325,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2297,\n            \"cameraName\": \"新吴区吉祥如意汉堡店\",\n            \"deviceSerial\": \"234276417\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166767050,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2293,\n            \"cameraName\": \"新吴区忘川秋水麻辣烫店\",\n            \"deviceSerial\": \"234977404\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166775578,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2289,\n            \"cameraName\": \"新吴区正和快餐店\",\n            \"deviceSerial\": \"234279119\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166783074,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2288,\n            \"cameraName\": \"新吴区文奎面馆\",\n            \"deviceSerial\": \"234279089\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166788421,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2285,\n            \"cameraName\": \"新吴区李奶奶手擀面\",\n            \"deviceSerial\": \"234276966\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166796972,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2270,\n            \"cameraName\": \"新吴区阿杜渝派酸菜鱼店\",\n            \"deviceSerial\": \"234279041\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166811807,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2269,\n            \"cameraName\": \"无锡市东坊富豪大酒店\",\n            \"deviceSerial\": \"234279428\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166819634,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2268,\n            \"cameraName\": \"新吴区庆胜包子店\",\n            \"deviceSerial\": \"D73753119\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166827087,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2266,\n            \"cameraName\": \"新吴区聚坊饭店\",\n            \"deviceSerial\": \"234279120\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166835852,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        },\n        {\n            \"id\": 2257,\n            \"cameraName\": \"新吴区必凡牛肉汤店\",\n            \"deviceSerial\": \"234279439\",\n            \"chanNum\": 1,\n            \"status\": 1,\n            \"onlineStatus\": 0,\n            \"startTime\": 1600166852126,\n            \"expireTime\": null,\n            \"userCameraState\": 1,\n            \"isEncrypt\": 0,\n            \"model\": \"CAMERA\"\n        }\n    ]\n}"
+                }
+            ]
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "68667a5f-1b46-428e-80dc-b8f1a1521de3",
+                "type": "text/javascript",
+                "exec": [
+                    "// 获取全局变量",
+                    "appSecret = postman.getGlobalVariable(\"appSecret\")",
+                    "",
+                    "//设置当前时间戳",
+                    "postman.setGlobalVariable(\"CurTime\", Math.round(new Date().getTime()));",
+                    "CurTime = postman.getGlobalVariable('CurTime')",
+                    "",
+                    "//js 随机生成指定长度字符",
+                    "function randomString(n) {  ",
+                    "  let str = 'abcdefghijklmnopqrstuvwxyz9876543210';",
+                    "  let tmp = '',",
+                    "      i = 0,",
+                    "      l = str.length;",
+                    "  for (i = 0; i < n; i++) {",
+                    "    tmp += str.charAt(Math.floor(Math.random() * l));",
+                    "  }",
+                    "  return tmp;",
+                    "}",
+                    "postman.setGlobalVariable(\"Nonce\", randomString(8));",
+                    "Nonce = postman.getGlobalVariable('Nonce')",
+                    "",
+                    "",
+                    "//加密字符串",
+                    "var decrypt = Nonce+appSecret+CurTime;",
+                    "//生成签名串：这里使用SHA1算法并使用十六进制编码",
+                    "//CryptoJS-为JavaScript提供了各种各样的加密算法",
+                    "//作者：CryptoJS<>(https://code.google.com/p/crypto-js/)",
+                    "var signHmacSHA1=CryptoJS.SHA1(decrypt).toString();",
+                    "console.log(\"checkNum ---->\" + signHmacSHA1);",
+                    "postman.setGlobalVariable(\"CheckNum\", signHmacSHA1);"
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "33e349a9-6a64-40da-90e9-8bfb1278fcc3",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
