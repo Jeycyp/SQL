@@ -114,7 +114,7 @@
                     ],
                     "cookie": [],
                     "responseTime": null,
-                    "body": "{\n    \"msg\": \"操作成功\",\n    \"code\": 200,\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ4bG15dW4iLCJ1biI6Imp4amQiLCJleHAiOjE2MzU4NDE5NzYsImlhdCI6MTYzNTg0MTk3NiwicG4iOiIxODg4ODg2NjY2NCJ9.r8W_mc6FfC3ZSdEG6x7Qg2DPoSH-9l684WwAzX6SjOg\"\n}"
+                    "body": "{\n    \"msg\": \"操作成功 \",\n    \"code\": 200,\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ4bG15dW4iLCJ1biI6Imp4amQiLCJleHAiOjE2MzU4NDE5NzYsImlhdCI6MTYzNTg0MTk3NiwicG4iOiIxODg4ODg2NjY2NCJ9.r8W_mc6FfC3ZSdEG6x7Qg2DPoSH-9l684WwAzX6SjOg\"\n}"
                 }
             ]
         },
